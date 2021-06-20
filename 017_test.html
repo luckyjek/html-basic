@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        tr {
+            background-color: rgb(255, 255, 255),
+            ;
+        }
+
+        /* tr밑에있는 차일드를 찾는것이다.
+        odd는 tr중에서 홀수 행에 해당하는 tr들만 찾겠다는 의미이다. -> 그다음 백그라운드에 peru를주겠다. 
+        odd반대는 even 짝수*/
+        /* tr:nth-child(even)>td {
+            background-color: peru;
+        } */
+
+        tr>td:nth-child(3),
+        tr>th:nth-child(3) {
+            background-color: rgb(189, 247, 30);
+        }
+
+        tr>td:nth-child(4),
+        tr>th:nth-child(4) {
+            background-color: rgb(189, 247, 30);
+        }
+
+        tr>th:nth-child(4) {
+            background-color: powderblue;
+        }
+
+        tr:nth-child(2)>th:nth-child(1),
+        tr:nth-child(2)>th:nth-child(1) {
+            background-color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table style="width: 100%; border: 1px solid rebeccapurple;">
+        <tr>
+            <!--제목이 들어가는 부분은 th -->
+            <th rowspan="2">출발역</th>
+            <th rowspan="2">도착역</th>
+            <th colspan="2">현재운임</th>
+            <th colspan=" 2" style="background-color: palevioletred;">2022년 중앙선 전 구간 개통 시<br> 청량리~서원주 구간 '준고속 서비스'</th>
+
+
+        </tr>
+        <tr>
+            <!--데이터가들어가는부분은 td -->
+            <td style="background-color: cadetblue;  text-align: center;"><b>일반실(A)</b></td>
+            <td style="background-color: cadetblue; text-align: center;"><b>우등실</b></td>
+            <td style="background-color: palevioletred;  text-align: center;"><b>일반실(B)</b></td>
+            <td style="background-color: palevioletred;  text-align: center;"><b>우등실</b></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">양평</td>
+            <td style="text-align: center;">원주</td>
+            <td style="text-align: right;">8,400</td>
+            <td style="text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+        </tr>
+        <tr>
+            <!--제목이 들어가는 부분은 th -->
+            <td style="text-align: center;">원주</td>
+            <td style="text-align: center;">제천</td>
+            <td style=" text-align: right;">8,400</td>
+            <td style=" text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+        </tr>
+        <tr>
+            <!--제목이 들어가는 부분은 th -->
+            <td style="text-align: center;">원주</td>
+            <td style="text-align: center;">단양</td>
+            <td style="text-align: right;">8,400</td>
+            <td style=" text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+        </tr>
+        <tr>
+            <!--제목이 들어가는 부분은 th -->
+            <td style="text-align: center;">원주</td>
+            <td style="text-align: center;">풍기</td>
+            <td style="text-align: right;">10,400</td>
+            <td style=" text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+        </tr>
+        <tr>
+            <!--제목이 들어가는 부분은 th -->
+            <td style="text-align: center;">원주</td>
+            <td style="text-align: center;">영주</td>
+            <td style="text-align: right;">10,000</td>
+            <td style=" text-align: right;">11,700</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+
+        </tr>
+        <tr>
+            <!--제목이 들어가는 부분은 th -->
+            <td style="text-align: center;">원주</td>
+            <td style="text-align: center;">안동</td>
+            <td style=" text-align: right;">14,900</td>
+            <td style=" text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+            <td style="background-color: palevioletred; text-align: right;">10,100</td>
+        </tr>
+    </table>
+</body>
+
+</html>

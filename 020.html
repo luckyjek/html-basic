@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 사용자의 입력을 받기위한 input태그 -->
+    <form action="">
+        <!-- 프로그램적으로 써야된다면 ? readonly를 써서 사용자한테 건들지못하게하면서 value 값을 넘기면된다.  -->
+        <!-- hidden을쓰면 사용자한테 안보이므로, value값에 저장된 값을 쓰고싶을때, 사용가능하다. -->
+
+
+        <input type="text" id="" maxlength="6" value="hihihi" required readonly><br>
+
+        <input type="checkbox" name="program_lang" id="chk_html" checked disabled>
+        <label for="chk_html">HTML</label>
+        <!--서버에서는 value값이 넘어가기때문에, 너무너무 중요하다! -->
+        <input type="checkbox" name="program_lang" id="chk_css" value="CSS">
+        <label for="chk_css">CSS</label>
+        <!--id없이 바로 label안에 input 박스를 넣어서 바로 연동할수있다.-->
+        <label><input type="checkbox" name="program_lang" id=""> 자바스크립트</label>
+        <br><br>
+
+        <div><input type="color"></div>
+        <div><input type="date"></div>
+        <div><input type="datetime-local" name="" id=""></div>
+        <div>
+            <label for="">이메일</label>
+            <input type="email" name="" id="">
+        </div>
+        <div><input type="file" name="" id="multiple"></div>
+        <!-- 
+        <div>
+            이미지이자, 버튼의 역할을 할 수 있다. input image
+        <input type="image" src="https://cdn.britannica.com/22/206222-131-E921E1FB/Domestic-feline-tabby-cat.jpg"
+            alt="image">
+        </div> -->
+        <div><input type="month" name="" id=""></div>
+        <div><input type="number" name="" id=""></div>
+        <div><input type="password" name="" id=""></div>
+        <div><input type="radio" name="" id=""></div>
+        <div>
+            <input type="radio" name="rao_program_lang" id="rao_chk_html" checked>
+            <label for="rao_chk_html">HTML</label>
+
+            <input type="radio" name="rao_program_lang" id="rao_chk_css">
+            <label for="rao_chk_css">CSS</label>
+            <!--id없이 바로 label안에 input 박스를 넣어서 바로 연동할수있다.-->
+            <label><input type="radio" name="rao_program_lang" id=""> 자바스크립트</label>
+        </div>
+        <div>
+            <input type="range" name="" id="" min="0" max="50">
+        </div>
+        <div>
+            <!-- search and text 차이점-->
+            <input type="search" name="" id="">검색 X 표시
+        </div>
+        <!-- 정규식으로 되어있다. pattern  -->
+        <div><input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">핸드폰입력 정규식</div>
+        <div><input type="time" name="" id=""></div>
+        <div><input type="url" name="" id=""></div>
+        <div><input type="week" name="" id="">그해 오늘이 몇번째 주차인지를 알려준다.-> 재무/회계쪽에서 많이 사용(실무)</div>
+        <div><textarea name="" id="" cols="30" rows="10" style="width: 100%;"></textarea></div>
+        <br>
+
+
+        <button type="button">조회</button>
+        <input type="submit" value="저장">
+
+    </form>
+
+</body>
+
+</html>
